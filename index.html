@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/styleMap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="welcome-contain">
+      <div class="welcome">
+        <img src="./assets/images/welcomeLogo.png" alt="" />
+      </div>
+    </div>
+    <div class="container hidden">
+      <section class="register hidden">
+        <span class="error-screen hidden">error</span>
+        <img src="./assets/images/Logo 1 (1).png" alt="" />
+        <p class="section-title">Registration</p>
+        <p class="section-p">For Both Staff & Students</p>
+        <form>
+          Reg No.
+          <input type="text" placeholder="College Reg. No." id="userName" />
+          College Email ID
+          <input
+            type="email"
+            placeholder="username@collegename.ac.in"
+            id="newEmail"
+          />
+          Password
+          <input type="password" id="new_password" placeholder="********" />
+          <p class="confirm-password">Confirm Password</p>
+          <input type="password" id="confirm_password" placeholder="********" />
+
+          <input type="checkbox" id="showRegisterPassword" />
+          <p class="showPasswordText">show password</p>
+        </form>
+
+        <button class="sectionBtn" id="registerBtn">Register</button>
+        <div class="other-methods">
+          <p>Already a User? <span id="toLogin">Login Now</span></p>
+          <span>Use as Guest</span>
+        </div>
+      </section>
+      <section class="login">
+        <span class="error-screen-login hidden">error</span>
+        <img src="./assets/images/Logo 1 (1).png" alt="" />
+        <p class="section-title">Welcome Back !</p>
+        <p class="section-p">Sign in to continue to yourDigital Library</p>
+        <form>
+          Email
+          <input
+            type="email"
+            id="email"
+            placeholder="username@collegename.ac.in"
+          />
+
+          Password
+          <input type="password" id="email_password" placeholder="********" />
+          <div class="show-password">
+            <img
+              class="hide"
+              src="./assets/icons/hide.png"
+              onclick="LoginShowPassword()"
+              alt=""
+            />
+            <img class="show hidden" src="./assets/icons/show.png" alt="" />
+          </div>
+        </form>
+        <div class="for-me">
+          <input type="checkbox" id="remember-checkbox" />
+          Remember Me
+          <a>Forgot Password?</a>
+        </div>
+        <button class="sectionBtn" id="loginBtn">Login</button>
+        <div class="other-methods">
+          <p>New User? <span id="toRegister">Register Here</span></p>
+          <span>Use as Guest</span>
+        </div>
+      </section>
+      <!-- =============================  HOME PAGE ======================================== -->
+      <div class="home hidden">
+        <!-- ========================= Aside Bar -->
+        <aside>
+          <img src="./assets/images/Logo 1 (1).png" alt="" />
+          <ul class="menues">
+            <li><img src="./assets/icons/home.svg" alt="" />Home</li>
+            <li><img src="./assets/icons/Search (1).svg" alt="" />Search</li>
+            <li><img src="./assets/icons/Bookshelf.svg" alt="" />My Shelf</li>
+            <li><img src="./assets/icons/Give Gift.svg" alt="" />Contribute</li>
+          </ul>
+          <ul class="FAQ">
+            <li>About</li>
+            <li>Support</li>
+            <li>Terms & Condition</li>
+          </ul>
+        </aside>
+        <!-- ========================== Main ===================================================== -->
+        <main>
+          <!-- ==========================  Navbar  -->
+          <nav>
+            <div class="search-box">
+              <select>
+                <option>All</option>
+                <option>Title</option>
+                <option>Author</option>
+                <option>Text</option>
+                <option>Subjects</option>
+              </select>
+              <input type="text" placeholder="Search" />
+              <div class="imgs">
+                <img src="./assets/icons/mainSearch.svg" alt="" />
+                <span>|</span>
+                <img src="./assets/icons/barcode scanner.svg" alt="" />
+              </div>
+            </div>
+            <div class="translate-box">
+              <img src="./assets/icons/Translate.svg" alt="" />
+              <select>
+                <option value="uzbek">English</option>
+                <option value="uzbek">Russian</option>
+                <option value="uzbek">Uzbek</option>
+              </select>
+            </div>
+            <div class="time-box">
+              <div class="hour">
+                <img src="./assets/icons/Time.svg" alt="" />
+                <p></p>
+              </div>
+              <div class="day">
+                <!-- <img src="./assets/icons/calendar.svg" alt="" /> -->
+
+                <p></p>
+              </div>
+            </div>
+            <div class="user-box">
+              <img id="user-icon" src="./assets/icons/user-icon.png" alt="" />
+              <p class="userName">username</p>
+              <img id="downIcon" src="./assets/icons/Polygon 1.svg" alt="" />
+              <div class="menues">
+                <p>Profile</p>
+                <p>Favourites</p>
+                <p>Payments</p>
+                <p id="logOutBtn">Logout</p>
+              </div>
+            </div>
+          </nav>
+          <!-- ========================== Header  -->
+          <header>
+            <div class="quotes">
+              <div class="slider">
+                <div class="quote">
+                  <div class="items">
+                    <h3>Today’s Quote</h3>
+                    <p>
+                      “Every person should do good work for himself and
+                      society.”
+                    </p>
+                    <h6>-Islom Karimov</h6>
+                  </div>
+                </div>
+                <div class="quote hidden">
+                  <div class="items">
+                    <h3>Today’s Quote</h3>
+                    <p>"If you don't love what you do, quit it"</p>
+                    <h6>-Stiv Jobs</h6>
+                  </div>
+                </div>
+                <div class="quote hidden">
+                  <div class="items">
+                    <h3>Today’s Quote</h3>
+                    <p>
+                      “The most intelligent person among people should be
+                      himself, because it is not lawful for every man to use his
+                      mind for others!"
+                    </p>
+                    <h6>-Albert Enshteyn</h6>
+                  </div>
+                </div>
+                <div class="quote hidden">
+                  <div class="items">
+                    <h3>Today’s Quote</h3>
+                    <p>
+                      “When something is important enough, you do it even if the
+                      odds are not in your favor."
+                    </p>
+                    <h6>-Elon Musk</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="dotes">
+                <span></span>
+              </div>
+            </div>
+            <div class="new-arrivals">
+              <div class="title-box">
+                <h3>New Arrivals</h3>
+              </div>
+              <div>
+                <div class="arrival-books">
+                  <div class="book">
+                    <img src="./assets/images/holyBible.png" alt="" />
+                  </div>
+                  <div class="book">
+                    <img src="./assets/images/harryPotter.png" alt="" />
+                  </div>
+                  <div class="book">
+                    <img src="./assets/images/learnUX.png" alt="" />
+                  </div>
+                  <div class="book">
+                    <img src="./assets/images/dontMake.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+          <h1 class="no-books">no books available</h1>
+        </main>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

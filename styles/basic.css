@@ -1,0 +1,39 @@
+@font-face {
+  font-family: Inter;
+  src: url(../assets/fonts/Inter-Regular.ttf);
+}
+@font-face {
+  font-family: digital;
+  src: url(../assets/fonts/DigitalNumbers-Regular.ttf);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+a {
+  color: #4d4d4d;
+}
+
+.hidden {
+  display: none;
+}
+.container {
+  width: 1920px;
+  height: 1000px;
+}
+body {
+  overflow: hidden;
+}
+button {
+  cursor: pointer;
+}
+li {
+  list-style: none;
+}
